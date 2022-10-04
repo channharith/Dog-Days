@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* 5 */
+.grid-container {
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
+  grid-template-rows: 125px 125px 125px 125px 125px;
+  /* grid-template-rows: 150px 150px 75px 75px;
+  grid-template-columns: 100px 300px 50px 100px; */
+  gap: 10px;
+  text-align: center;
+  width: 930px;
+  height: 660px;
+  margin:40px;
+  border-color:black;
+  border-width: 2px;
+  border-style: solid;
+  justify-content: right;
+  margin: 100px;
+}
+
+h1{
+  text-align:center;
+}
+
+h2{
+  text-align: center;
+}
