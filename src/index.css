@@ -11,29 +11,241 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /* 5 7 */
-.grid-container {
+.calendar {
   display: grid;
-  grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
-  grid-template-rows: 125px 125px 125px 125px 125px;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px 150px;
   /* grid-template-rows: 150px 150px 75px 75px;
   grid-template-columns: 100px 300px 50px 100px; */
-  gap: 10px;
   text-align: center;
-  width: 930px;
-  height: 660px;
+  width: 1050px;
+  height: 750px;
   margin:40px;
   border-color:black;
   border-width: 2px;
   border-style: solid;
-  justify-content: right;
   margin: 100px;
+  transform: translate(-75px, 0px);
+  background: white;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+/* Add border bottom to all items */
+.day {
+  padding: 10px;
+  border: 1px solid black;
+  /* with flexbox:
+  width: calc(50% - 21px);
+  */
 }
 
+/* Remove border bottom from last item & from second last if its odd */
+.item:last-child, .item:nth-last-child(2):nth-child(odd) {
+  border-bottom: none;
+}
+
+/* Add right border to every second item */
+.item:nth-child(odd) {
+  border-right: 1px solid black;
+}
 h1{
   text-align:center;
 }
 
 h2{
-  text-align: center;
+  word-spacing: 45px;
+  position: absolute;
+  left: 60px;
+  top: 110px;
+}
+
+.cat{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+#SA1 {
+  background: white;
+  grid-row: 1;
+  grid-column: 7;
+}
+
+#SU1 {
+  background: white;
+  grid-row: 2;
+  grid-column: 1;
+}
+#M1 {
+  background: white;
+  grid-row: 2;
+  grid-column: 2;
+}
+#T1 {
+  background: white;
+  grid-row: 2;
+  grid-column: 3;
+}
+#W1 {
+  background: white;
+  grid-row: 2;
+  grid-column: 4;
+}
+#TH1 {
+  background: white;
+  grid-row: 2;
+  grid-column: 5;
+}
+#F1 {
+  background: white;
+  grid-row: 2;
+  grid-column: 6;
+}
+
+
+#SA2 {
+  background: white;
+  grid-row: 2;
+  grid-column: 7;
+}
+
+#SU2 {
+  background: white;
+  grid-row: 3;
+  grid-column: 1;
+}
+#M2 {
+  background: white;
+  grid-row: 3;
+  grid-column: 2;
+}
+#T2 {
+  background: white;
+  grid-row: 3;
+  grid-column: 3;
+}
+#W2 {
+  background: white;
+  grid-row: 3;
+  grid-column: 4;
+}
+#TH2 {
+  background: white;
+  grid-row: 3;
+  grid-column: 5;
+}
+#F2 {
+  background: white;
+  grid-row: 3;
+  grid-column: 6;
+}
+
+
+#SA3 {
+  background: white;
+  grid-row: 3;
+  grid-column: 7;
+}
+
+#SU3 {
+  background: white;
+  grid-row: 4;
+  grid-column: 1;
+}
+#M3 {
+  background: white;
+  grid-row: 4;
+  grid-column: 2;
+}
+#T3 {
+  background: white;
+  grid-row: 4;
+  grid-column: 3;
+}
+#W3 {
+  background: white;
+  grid-row: 4;
+  grid-column: 4;
+}
+#TH3 {
+  background: white;
+  grid-row: 4;
+  grid-column: 5;
+}
+#F3 {
+  background: white;
+  grid-row: 4;
+  grid-column: 6;
+}
+
+
+#SA4 {
+  background: white;
+  grid-row: 4;
+  grid-column: 7;
+}
+
+#SU4 {
+  background: white;
+  grid-row: 5;
+  grid-column: 1;
+}
+#M4 {
+  background: white;
+  grid-row: 5;
+  grid-column: 2;
+}
+#T4 {
+  background: white;
+  grid-row: 5;
+  grid-column: 3;
+}
+#W4 {
+  background: white;
+  grid-row: 5;
+  grid-column: 4;
+}
+#TH4 {
+  background: white;
+  grid-row: 5;
+  grid-column: 5;
+}
+#F4 {
+  background: white;
+  grid-row: 5;
+  grid-column: 6;
+}
+
+#SA5 {
+  background: white;
+  grid-row: 5;
+  grid-column: 7;
+}
+
+#SU5 {
+  background: white;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#M5 {
+  background: white;
+  grid-row: 1;
+  grid-column: 2;
+}
+#T5 {
+  background: white;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+#W5 {
+  background: white;
+  grid-row: 1;
+  grid-column: 4;
 }
